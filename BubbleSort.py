@@ -6,7 +6,7 @@ ordenat=False
 contador=len(array)-1
 while contador>0:
   for i in range(0, len(array)-1):
-    if array[i] > array[i+1]:
+    if colors[array[i]] > colors[array[i+1]]:
       aux=array[i+1]
       array[i+1]=array[i]
       array[i]=aux
