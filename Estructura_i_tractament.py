@@ -1,12 +1,24 @@
 #Precondició: L'usuari té l'informació necessaria per omplir els requeriments el programa
 #constants
-alumnes="Indica la quantitat d'alumnes que vols registrar"
-dades="Introdueix les seguents dades de l'alumne separades per espais: Nom, Cognom, Edat, Nota1, Nota2, Nota3."
+alumnes="Indica la quantitat d'alumnes que vols registrar "
+dades="Introdueix les seguents dades de l'alumne separades per espais: Nom, Cognom, Edat, Nota1, Nota2, Nota3: "
 #endconstants
 #var
-tupla=()
+i=0
+lista1=[]
+lista2=[]
+x=int(input(alumnes))
+a=['tal tal tal 1 2 6']
+a.split(" ")
 #endvar
-for i in range(input(input(alumnes)):
-    tupla(i)=(input(dades))
-    
+while i < x:
+    dades_alumne=[input(dades)]
+    dades_alumne.split(" ")
+    notas=int(dades_alumne[4,5,6])
+    tupla=(dades_alumne, notas)
+    if notas[0,1,2]>8:
+        lista1.append(tupla)
+        print("bien")
+    i+=1
+
 #Postcondició: El programa retorna dues llistes amb els alumnes segons quina condició compleixen
