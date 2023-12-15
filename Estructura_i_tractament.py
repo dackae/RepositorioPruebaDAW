@@ -6,6 +6,7 @@ dades="Introdueix les seguents dades de l'alumne separades per espais: Nom, Cogn
 #var
 tupla=()
 #endvar
-for i in range(input(alumnes)):
+for i in range(input(input(alumnes)):
     tupla(i)=(input(dades))
+    
 #Postcondició: El programa retorna dues llistes amb els alumnes segons quina condició compleixen
