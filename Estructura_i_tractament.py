@@ -6,6 +6,7 @@ titol_llista2="1 o més notes majors que 8"
 titol_llista1="Mitjana superior a 7"
 #endconstants
 #var
+condicion_lista1=False
 suma=0
 n=0
 lista1=[]
@@ -31,11 +32,22 @@ for i in range(0,x):
     if notas[2]>8:
         lista2.append(tupla)
 if len(lista1)>0:
+    i=0
     print(titol_llista1)
+    while condicion_lista==False:
+        print(lista1[i])
+        i+=1
+        if i>=len(lista1):
+            condicion_lista=True
 else:
-    print("Ningun alumne ha obtingut una mitjana superior a 7")
-do {
-    print(lista1[i])
-}
-while i<len(lista1)-1:
+    print("Ningun alumne ha obtingut una mitjana superior a 7")   
+if len(lista2)>0:
+    i=0
+    condicion_lista=False
+    print(titol_llista2)
+    while condicion_lista==False:
+        print(lista2[i])
+        i+=1
+        if i>=len(lista2):
+            condicion_lista=True
 #Postcondició: El programa retorna dues llistes amb els alumnes segons quina condició compleixen
