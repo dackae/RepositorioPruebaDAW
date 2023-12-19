@@ -6,7 +6,7 @@ titol_llista2="1 o més notes majors que 8"
 titol_llista1="Mitjana superior a 7"
 #endconstants
 #var
-condicion_lista1=False
+condicion_lista=False
 suma=0
 n=0
 lista1=[]
@@ -33,9 +33,9 @@ for i in range(0,x):
         lista2.append(tupla)
 if len(lista1)>0:
     i=0
-    print(titol_llista1)
+    print(titol_llista1 \n)
     while condicion_lista==False:
-        print(lista1[i])
+        print(\b lista1[i])
         i+=1
         if i>=len(lista1):
             condicion_lista=True
@@ -44,9 +44,9 @@ else:
 if len(lista2)>0:
     i=0
     condicion_lista=False
-    print(titol_llista2)
+    print(titol_llista2 \n)
     while condicion_lista==False:
-        print(lista2[i])
+        print(\b lista2[i])
         i+=1
         if i>=len(lista2):
             condicion_lista=True
