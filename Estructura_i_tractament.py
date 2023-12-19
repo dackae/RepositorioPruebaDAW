@@ -8,15 +8,24 @@ i=0
 lista1=[]
 lista2=[]
 x=int(input(alumnes))
-a=['tal tal tal 1 2 6']
-a.split(" ")
+a="tal tal tal 1 2 6"
+text=a.split(" ")
 #endvar
 while i < x:
-    dades_alumne=[input(dades)]
-    dades_alumne.split(" ")
-    notas=int(dades_alumne[4,5,6])
+    dades_alumne=input(dades)
+    dades_alumne=dades_alumne.split(" ")
+    notas=[int(dades_alumne[3])]
+    notas.append(int(dades_alumne[4]))
+    notas.append(int(dades_alumne[5]))
+    print(notas)
     tupla=(dades_alumne, notas)
-    if notas[0,1,2]>8:
+    if notas[0]>8:
+        lista1.append(tupla)
+        print("bien")
+    if notas[1]>8:
+        lista1.append(tupla)
+        print("bien")
+    if notas[2]>8:
         lista1.append(tupla)
         print("bien")
     i+=1
