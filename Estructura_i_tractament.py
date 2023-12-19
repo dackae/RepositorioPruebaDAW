@@ -16,9 +16,9 @@ x=int(input(alumnes))
 for i in range(0,x):
     dades_alumne=input(dades)
     dades_alumne=dades_alumne.split(" ")
-    notas=[int(dades_alumne[3])]
-    notas.append(int(dades_alumne[4]))
-    notas.append(int(dades_alumne[5]))
+    notas=[float(dades_alumne[3])]
+    notas.append(float(dades_alumne[4]))
+    notas.append(float(dades_alumne[5]))
     tupla=(dades_alumne)
     for j in range(0,3):
         suma=suma+notas[j]
@@ -33,9 +33,9 @@ for i in range(0,x):
         lista2.append(tupla)
 if len(lista1)>0:
     i=0
-    print(titol_llista1 \n)
+    print(titol_llista1, "\n")
     while condicion_lista==False:
-        print(\b lista1[i])
+        print("\t", lista1[i])
         i+=1
         if i>=len(lista1):
             condicion_lista=True
@@ -44,9 +44,9 @@ else:
 if len(lista2)>0:
     i=0
     condicion_lista=False
-    print(titol_llista2 \n)
+    print(titol_llista2, "\n")
     while condicion_lista==False:
-        print(\b lista2[i])
+        print("\t", lista2[i])
         i+=1
         if i>=len(lista2):
             condicion_lista=True
