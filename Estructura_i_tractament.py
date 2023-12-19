@@ -50,4 +50,6 @@ if len(lista2)>0:
         i+=1
         if i>=len(lista2):
             condicion_lista=True
+else:
+    print("Ningun alumne ha obtingut una nota superior a 8")
 #Postcondició: El programa retorna dues llistes amb els alumnes segons quina condició compleixen
