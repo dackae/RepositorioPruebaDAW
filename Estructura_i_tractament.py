@@ -9,6 +9,9 @@ titol_llista1="Mitjana superior a 7"
 condicion_lista=False
 suma=0
 n=0
+nota1
+nota2
+nota3
 lista1=[]
 lista2=[]
 x=int(input(alumnes))
@@ -20,10 +23,11 @@ for i in range(0,x):
     notas.append(float(dades_alumne[4]))
     notas.append(float(dades_alumne[5]))
     tupla=(dades_alumne)
-    for j in range(0,3):
-        suma=suma+notas[j]
-    nota_media=suma/3
-    if nota_media>7:
+    nota1=nota[0]*0,3
+    nota2=nota[1]*0,4
+    nota3=nota[2]*0,3
+    notafinal=nota1+nota2+nota3
+    if notafinal>7:
         lista1.append(tupla)
     if notas[0]>8:
         lista2.append(tupla)
