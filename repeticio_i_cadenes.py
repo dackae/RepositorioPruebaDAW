@@ -1,4 +1,4 @@
-#Pre:
+#Pre:L'usuari no utilitzara caracters especials apart de la , o el .
 text=input("Introdueix el text: ")
 text=text.lower()
 text=text.split(",")
@@ -22,11 +22,6 @@ while condicion_texto==False:
      i+=1
      if i>=len(text):
           condicion_texto=True
-#para el bubble sort voy a pillar el diccionario y voy a hacer dos listas
-#una con las keys la otra los values
-#comparo values y reordeno los values a la vez que las keys
-#luego creo un bucle para añadir indice 1 de uno e indice 1 del otro en una variable algo al estilo:
-# variable= palabra(lista_palabras)'=' numero(lista_cantidad)
 lista_palabras=list(dic_recuento.keys())
 lista_cantidad=list(dic_recuento.values())
 k=0
@@ -44,3 +39,4 @@ while fin!=True:
           fin=True
 for k in range(0,len(lista_cantidad)):
      print(lista_palabras[k], '=', lista_cantidad[k])
+#Post: Per pantall es mostra a l'esquerra la paraula i a la dreta del "=" la quantitat de cops que apareix ordenat de major a menor.
