@@ -1,6 +1,6 @@
 #Pre:
 text=input("Introdueix el text: ")
-text=text.casefold()
+text=text.lower()
 text=text.split(",")
 text="".join(text)
 text=text.split(".")
@@ -22,7 +22,8 @@ while condicion_texto==False:
      i+=1
      if i>=len(text):
           condicion_texto=True
-print(dic)
-#Lo que debo hacer seria mas o menos el comparar indice i i indice j si son iguales aumento en 1 el contador y a la vez borro el indice actual, nota, hacerlo en un while para no aumentar la j en caso de que borre el j
-#Lo del diccionario esta bien
-#Post:a
+#para el bubble sort voy a pillar el diccionario y voy a hacer dos listas
+#una con las keys la otra lso values
+#comparo values y reordeno los values a la vez que las keys
+#luego creo un bucle para añadir indice 1 de uno e indice 1 del otro en una variable algo al estilo:
+# variable= palabra(lista_palabras)'=' numero(lista_cantidad)
